@@ -30,7 +30,7 @@
  * Define search commands. Depends on dialog.js or another
  * implementation of the openDialog method.
  *
- * This code was copied from CodeMirror2/lib/util/search.js so that the UI strings 
+ * This code was copied from CodeMirror/lib/util/search.js so that the UI strings 
  * could be localized.
  *
  * Replace works a little oddly -- it will do the replace on the next findNext press.

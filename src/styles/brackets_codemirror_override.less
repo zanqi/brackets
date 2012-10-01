@@ -21,7 +21,7 @@
 /* Brackets / CodeMirror Code Formatting */
 
 /*
- * TODO This can be removed next time we update CodeMirror2.
+ * TODO This can be removed next time we update CodeMirror.
  * Marijn made this change to codemirror.css, but I need it now
  * in order to make font resizing work.
  */
@@ -82,14 +82,14 @@
     .CodeMirror-lines {
         padding: @code-padding;
     }
-    .CodeMirror-gutter {
+    .CodeMirror-gutters {
         background-color: @background-color-3;
         border-right: none;
         padding-top: @code-padding;
         padding-bottom: @code-padding;
         min-width: 2.5em;
     }
-    .CodeMirror-gutter-text {
+    .CodeMirror-line-number {
         color: @accent-comment;
         /*font-size: 0.9em;*/  /* restore after SourceCodePro font fix? */
         padding-top: 0px;
@@ -122,7 +122,7 @@
     .CodeMirror .CodeMirror-focused div.CodeMirror-selected {
         background: #d2dcf8;
     }
-    .CodeMirror .CodeMirror-gutter {
+    .CodeMirror .CodeMirror-gutters {
         background: transparent;
         border-right: none;
     }

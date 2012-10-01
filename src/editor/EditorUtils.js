@@ -32,21 +32,21 @@ define(function (require, exports, module) {
     "use strict";
 
     require("thirdparty/path-utils/path-utils.min");
-    require("thirdparty/CodeMirror2/mode/xml/xml");
-    require("thirdparty/CodeMirror2/mode/javascript/javascript");
-    require("thirdparty/CodeMirror2/mode/css/css");
-    require("thirdparty/CodeMirror2/mode/less/less");
-    require("thirdparty/CodeMirror2/mode/htmlmixed/htmlmixed");
-    require("thirdparty/CodeMirror2/mode/clike/clike");
-    require("thirdparty/CodeMirror2/mode/php/php");
-    require("thirdparty/CodeMirror2/mode/coffeescript/coffeescript");
-    require("thirdparty/CodeMirror2/mode/clojure/clojure");
-    require("thirdparty/CodeMirror2/mode/perl/perl");
-    require("thirdparty/CodeMirror2/mode/ruby/ruby");
-    require("thirdparty/CodeMirror2/mode/lua/lua");
-    require("thirdparty/CodeMirror2/mode/mysql/mysql");
-    require("thirdparty/CodeMirror2/mode/diff/diff");
-    require("thirdparty/CodeMirror2/mode/markdown/markdown");
+    require("thirdparty/CodeMirror/mode/xml/xml");
+    require("thirdparty/CodeMirror/mode/javascript/javascript");
+    require("thirdparty/CodeMirror/mode/css/css");
+    require("thirdparty/CodeMirror/mode/less/less");
+    require("thirdparty/CodeMirror/mode/htmlmixed/htmlmixed");
+    require("thirdparty/CodeMirror/mode/clike/clike");
+    require("thirdparty/CodeMirror/mode/php/php");
+    require("thirdparty/CodeMirror/mode/coffeescript/coffeescript");
+    require("thirdparty/CodeMirror/mode/clojure/clojure");
+    require("thirdparty/CodeMirror/mode/perl/perl");
+    require("thirdparty/CodeMirror/mode/ruby/ruby");
+    require("thirdparty/CodeMirror/mode/lua/lua");
+    require("thirdparty/CodeMirror/mode/mysql/mysql");
+    require("thirdparty/CodeMirror/mode/diff/diff");
+    require("thirdparty/CodeMirror/mode/markdown/markdown");
 
     /**
      * @private

@@ -307,7 +307,7 @@ define(function (require, exports, module) {
      */
     function resizeEditor() {
         if (_currentEditor) {
-            $(_currentEditor.getScrollerElement()).height(_editorHolder.height());
+            $(_currentEditor.getRootElement()).height(_editorHolder.height());
             _currentEditor.refresh();
         }
     }
@@ -320,7 +320,7 @@ define(function (require, exports, module) {
     function _updateEditorSize() {
         // The editor itself will call refresh() when it gets the window resize event.
         if (_currentEditor) {
-            $(_currentEditor.getScrollerElement()).height(_editorHolder.height());
+            $(_currentEditor.getRootElement()).height(_editorHolder.height());
         }
     }
     
