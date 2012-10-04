@@ -632,9 +632,7 @@ define(function (require, exports, module) {
         
         if (!current) {
             StatusBar.hide();
-            resizeEditor();
         } else {
-            // Check if the statusbar is not visible to show it
             StatusBar.show();
             resizeEditor();
             
@@ -680,7 +678,7 @@ define(function (require, exports, module) {
         $indentIncrement.on("click", function () { _updateIndentSize(1); });
         
         StatusBar.hide();
-        _onFocusedEditorChange();
+        _onFocusedEditorChange(null, EditorManager.getFocusedEditor(), null);
     });
     
     // For unit tests and internal use only
