@@ -678,7 +678,7 @@ define(function (require, exports, module) {
         $indentIncrement.on("click", function () { _updateIndentSize(1); });
         
         StatusBar.hide();
-        _onFocusedEditorChange(null, EditorManager.getFocusedEditor(), null);
+        _onFocusedEditorChange(null, getFocusedEditor(), null);
     });
     
     // For unit tests and internal use only
