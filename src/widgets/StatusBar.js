@@ -114,9 +114,6 @@ define(function (require, exports, module) {
         }
     }
     
-    /**
-     * Hide the statusbar
-     */
     function hide() {
         $statusBar.hide();
     }
