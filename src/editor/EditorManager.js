@@ -591,23 +591,27 @@ define(function (require, exports, module) {
         var indentWithTabs = editor._codeMirror.getOption("indentWithTabs");
         $indentType.text(indentWithTabs ? Strings.STATUSBAR_TAB_SIZE : Strings.STATUSBAR_SPACES);
         $indentType.attr("title", indentWithTabs ? Strings.STATUSBAR_INDENT_TOOLTIP_SPACES : Strings.STATUSBAR_INDENT_TOOLTIP_TABS);
-        $indentWidth.text(editor._codeMirror.getOption("tabSize"));
+        
+        var size = indentWithTabs ? editor._codeMirror.getOption("tabSize") : editor._codeMirror.getOption("indentUnit");
+        $indentWidth.text(size);
     }
     
     function _toggleIndentType() {
         var editor = getFocusedEditor(),
-            val = editor._codeMirror.getOption("indentWithTabs");
+            indentWithTabs = editor._codeMirror.getOption("indentWithTabs");
         
-        editor._codeMirror.setOption("indentWithTabs", !val);
+        editor._codeMirror.setOption("indentWithTabs", !indentWithTabs);
         
         _updateIndentInfo(editor);
     }
     
     function _updateIndentSize(inc) {
-        var editor = getFocusedEditor(),
-            val = editor._codeMirror.getOption("indentUnit");
+        var editor          = getFocusedEditor(),
+            indentWithTabs  = editor._codeMirror.getOption("indentWithTabs"),
+            option          = indentWithTabs ? "tabSize" : "indentUnit",
+            size            = editor._codeMirror.getOption(option);
         
-        editor._codeMirror.setOption("indentWithTabs", val + inc);
+        editor._codeMirror.setOption(option, size + inc);
         
         _updateIndentInfo(editor);
     }
