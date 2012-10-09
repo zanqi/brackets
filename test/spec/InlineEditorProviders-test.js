@@ -991,7 +991,7 @@ define(function (require, exports, module) {
                     expect(inlineEditor).toHaveInlineEditorRange(toRange(start.line, end.line + 2));
                     
                     // TODO: can't do our usual undo + re-check range test at the end, becuase of
-                    // marijnh/CodeMirror bug #487
+                    // marijnh/CodeMirror2 bug #487
                 });
                 
                 
