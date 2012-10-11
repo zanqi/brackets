@@ -807,6 +807,7 @@ define(function (require, exports, module) {
         });
         this._inlineWidgets.push(inlineWidget);
         inlineWidget.onAdded();
+        this._codeMirror.refresh();
         
         // once this widget is added, notify all following inline widgets of a position change
         this._fireWidgetOffsetTopChanged(pos.line);
