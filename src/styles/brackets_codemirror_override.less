@@ -27,6 +27,7 @@
  */
 .CodeMirror pre {
     line-height: inherit;
+    padding: 0 @code-padding;
 }
 
 .CodeMirror-scroll {
@@ -80,7 +81,7 @@
 
     
     .CodeMirror-lines {
-        padding: @code-padding;
+        padding: @code-padding 0;
     }
     .CodeMirror-gutters {
         background-color: @background-color-3;
@@ -89,8 +90,9 @@
         padding-bottom: @code-padding;
         min-width: 2.5em;
     }
-    .CodeMirror-line-number {
+    .CodeMirror-linenumber {
         color: @accent-comment;
+        min-width: 2.5em;
         /*font-size: 0.9em;*/  /* restore after SourceCodePro font fix? */
         padding-top: 0px;
         padding-bottom: 0px;
