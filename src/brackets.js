@@ -92,7 +92,7 @@ define(function (require, exports, module) {
         NativeFileSystem        = require("file/NativeFileSystem").NativeFileSystem,
         PreferencesManager      = require("preferences/PreferencesManager"),
         Resizer                 = require("utils/Resizer");
-
+    var a = 'hello';
     // Local variables
     var params                  = new UrlParams(),
         PREFERENCES_CLIENT_ID   = "com.adobe.brackets.startup";
